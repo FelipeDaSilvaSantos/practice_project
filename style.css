@@ -56,7 +56,7 @@
     line-height: 24px; /*altura de uma linha para outra*/
 }
 
-/*span*/
+/*span primeira letra*/
 .first-character {
     font-weight: 400;
     float: left;
@@ -86,6 +86,20 @@
     letter-spacing: 8px;
 }
 
+div.theme button {
+    align-self: flex-end;
+    font-family: var(--font-title);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: #262629;
+    color: white;
+    border: 2px solid #26262956;
+    margin-bottom: 0.5rem;
+    float: right;
+}
+
 /* seção - bloco */
 #parallax-world-of-ugg .block {
     background: white;
@@ -110,6 +124,7 @@
     opacity: 0.70;
 }
 
+/*primeiro parallax*/
 #parallax-world-of-ugg .parallax-one {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -123,6 +138,7 @@
     background-position: center center;
 }
 
+/*segundo parallax*/
 #parallax-world-of-ugg .parallax-two {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -136,6 +152,7 @@
     background-position: center center;
 }
 
+/*terceiro parallax*/
 #parallax-world-of-ugg .parallax-three {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -157,6 +174,82 @@
     margin: 0 auto;
 }
 
+#footer {
+    font-family: var(--font-text);
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.452);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #F55D0B;
+    text-decoration: underline;
+}
+
+/* dark mode theme */
+/*************************/
+
+.dark {
+    background: #262629;
+}
+
+.dark #parallax-world-of-ugg .title {
+    background-color: #262629;
+    color: white;
+}
+
+.dark #parallax-world-of-ugg h1 {
+    color: white;
+}
+
+.dark #parallax-world-of-ugg h3 {
+    color: white;
+}
+
+.dark #parallax-world-of-ugg .block {
+    background: #262629;
+    color: white;
+}
+
+.dark #parallax-world-of-ugg .line-break {
+    border-bottom: 1px solid white;
+}
+
+.dark .rj {
+    color: #FA8823;
+}
+
+.dark .sp {
+    color: #EAE7F6;
+}
+
+.dark .am {
+    color: #0CEFF5;
+}
+
+.dark .theme button {
+    background: white;
+    color: black;
+    border: 2px solid #f7f7f7;
+}
+
+.dark #footer {
+    color: white;
+}
+
+.dark a {
+    color: white;
+}
+
+.dark a:hover {
+    color: #F55D0B;
+    text-decoration: underline;
+}
+
 /* media queries */
 
 @media screen and (max-width: 767px) {
@@ -166,9 +259,18 @@
     #parallax-world-of-ugg h2 {
         font-size: 30px;
     }
+
     #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two,
     #parallax-world-of-ugg .parallax-three {
         padding-top: 100px; padding-bottom: 100px;
+    }
+
+    #footer {
+        padding: 15px;
+    }
+
+    #parallax-world-of-ugg #credit {
+        font-size: 20px;
     }
 }
 
@@ -177,3 +279,5 @@
         padding: 30px 15px;
         width: 290px;}
 }
+
+
